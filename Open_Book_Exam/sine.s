@@ -1,5 +1,5 @@
 ; sine series
-     AREA    tan,CODE,READONLY
+     AREA    sine,CODE,READONLY
      EXPORT __main
      ENTRY
 __main  FUNCTION  
