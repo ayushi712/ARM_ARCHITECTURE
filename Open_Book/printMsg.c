@@ -37,7 +37,7 @@ void printMsg4p(const int a, const int b,const int c, const int d)
 	 char Msg[100];
 	 char *ptr;
 	 // Printing the message
-	 sprintf(Msg,"\nPrinting First parameter x:  ");
+	 sprintf(Msg,"\nx:  ");
 	 ptr = Msg ;
    while(*ptr != '\0')
 	 {
@@ -53,7 +53,7 @@ void printMsg4p(const int a, const int b,const int c, const int d)
       ++ptr;
    }
 	 // Printing the message
-	 sprintf(Msg,"\nPrinting Second parameter y: ");
+	 sprintf(Msg,"\ny: ");
 	 ptr = Msg ;
    while(*ptr != '\0')
 	 {
@@ -68,7 +68,7 @@ void printMsg4p(const int a, const int b,const int c, const int d)
       ++ptr;
    }
 	 // Printing the message
-	 sprintf(Msg,"\nPrinting Third parameter radius: ");
+	 sprintf(Msg,"\nradius: ");
 	 ptr = Msg ;
    while(*ptr != '\0')
 	 {
@@ -83,7 +83,7 @@ void printMsg4p(const int a, const int b,const int c, const int d)
       ++ptr;
    } 
     // Printing the message
-	 sprintf(Msg,"\nPrinting Fourth parameter theta: ");
+	 sprintf(Msg,"\ntheta: ");
 	 ptr = Msg ;
    while(*ptr != '\0')
 	 {
