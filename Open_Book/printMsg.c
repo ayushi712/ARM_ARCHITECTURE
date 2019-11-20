@@ -1,4 +1,3 @@
-
 #include "stm32f4xx.h"
 #include <string.h>
 void printMsg(const int a)
@@ -37,7 +36,7 @@ void printMsg4p(const int a, const int b,const int c, const int d)
 	 char Msg[100];
 	 char *ptr;
 	 // Printing the message
-	 sprintf(Msg,"\nx:  ");
+	 sprintf(Msg,"\nX:  ");
 	 ptr = Msg ;
    while(*ptr != '\0')
 	 {
@@ -45,21 +44,6 @@ void printMsg4p(const int a, const int b,const int c, const int d)
       ++ptr;
    }
 	 //Printing the first parameter
-	 sprintf(Msg, "%d\n", a);
-	 ptr = Msg ;
-   while(*ptr != '\0')
-	 {
-      ITM_SendChar(*ptr);
-      ++ptr;
-   }
-	 // Printing the message
-	 sprintf(Msg,"\ny: ");
-	 ptr = Msg ;
-   while(*ptr != '\0')
-	 {
-      ITM_SendChar(*ptr);
-      ++ptr;
-   }
 	 sprintf(Msg, "%d\n", b);
 	 ptr = Msg ;
    while(*ptr != '\0')
@@ -67,8 +51,23 @@ void printMsg4p(const int a, const int b,const int c, const int d)
       ITM_SendChar(*ptr);
       ++ptr;
    }
-	 // Printing the message
-	 sprintf(Msg,"\nradius: ");
+	  //Printing the message
+	 sprintf(Msg,"Y: ");
+	 ptr = Msg ;
+   while(*ptr != '\0')
+	 {
+      ITM_SendChar(*ptr);
+      ++ptr;
+   }
+	 sprintf(Msg, "%d\n", a);
+	 ptr = Msg ;
+   while(*ptr != '\0')
+	 {
+      ITM_SendChar(*ptr);
+      ++ptr;
+   }
+	  //Printing the message
+	 sprintf(Msg,"Radius: ");
 	 ptr = Msg ;
    while(*ptr != '\0')
 	 {
@@ -82,8 +81,8 @@ void printMsg4p(const int a, const int b,const int c, const int d)
       ITM_SendChar(*ptr);
       ++ptr;
    } 
-    // Printing the message
-	 sprintf(Msg,"\ntheta: ");
+    //Printing the message
+	 sprintf(Msg,"Theta: ");
 	 ptr = Msg ;
    while(*ptr != '\0')
 	 {
@@ -100,4 +99,5 @@ void printMsg4p(const int a, const int b,const int c, const int d)
 	 
 	 
 }
+
 
