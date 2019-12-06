@@ -1,11 +1,11 @@
     THUMB
      AREA     appcode, CODE, READONLY
      EXPORT __main
-	 IMPORT printMsg1
-	 IMPORT printMsg2
-	 IMPORT printMsg3
-	 IMPORT printMsg4
-	 IMPORT printMsg5
+	 IMPORT printMsga
+	 IMPORT printMsgb
+	 IMPORT printMsgc
+	 IMPORT printMsgd
+	 IMPORT printMsge
      IMPORT printMsg4p
 	   ENTRY 
 __main  FUNCTION
@@ -17,7 +17,7 @@ __main  FUNCTION
 		;S0 = W0,S1 = W1, S2 = W2, S3 = (Bias) as provided in the python code
 			
 
-LOGIC_AND1	BL printMsg1
+LOGIC_AND1	BL printMsga
 			VLDR.F32 S0,=-0.1
 			VLDR.F32 S1,=0.2
 			VLDR.F32 S2,=0.2
@@ -82,7 +82,7 @@ LOGIC_AND4	VLDR.F32 S0,=-0.1
 			B EXPONENT_X_CALCULATION
 			LTORG
 			
-LOGIC_OR1	BL printMsg2
+LOGIC_OR1	BL printMsgb
 			VLDR.F32 S0,=-0.1
 			VLDR.F32 S1,=0.7
 			VLDR.F32 S2,=0.7
@@ -147,7 +147,7 @@ LOGIC_OR4	VLDR.F32 S0,=-0.1
 			B EXPONENT_X_CALCULATION
 			LTORG
 
-LOGIC_NOT1	BL printMsg3
+LOGIC_NOT1	BL printMsgc
 			VLDR.F32 S0,=0.5
 			VLDR.F32 S1,=-0.7
 			VLDR.F32 S2,=0
@@ -180,7 +180,7 @@ LOGIC_NOT2	VLDR.F32 S0,=0.5
 			B EXPONENT_X_CALCULATION
 			LTORG
 
-LOGIC_NAND1	BL printMsg4
+LOGIC_NAND1	BL printMsgd
 			VLDR.F32 S0,=0.6
 			VLDR.F32 S1,=-0.8
 			VLDR.F32 S2,=-0.8
@@ -245,7 +245,7 @@ LOGIC_NAND4	VLDR.F32 S0,=0.6
 			B EXPONENT_X_CALCULATION
 			LTORG
 
-LOGIC_NOR1	BL printMsg5
+LOGIC_NOR1	BL printMsge
 			VLDR.F32 S0,=0.5
 			VLDR.F32 S1,=-0.7
 			VLDR.F32 S2,=-0.7
