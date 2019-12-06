@@ -1,6 +1,6 @@
 #include "stm32f4xx.h"
 #include <string.h>
-void printMsg1(const int a)
+void printMsga(const int a)
 {
 	 char Msg[100];
 	 char *ptr;
@@ -15,7 +15,7 @@ void printMsg1(const int a)
 	 ptr = Msg ;
    }
 
-	 void printMsg2(const int a)
+	 void printMsgb(const int a)
 {
 	 char Msg[100];
 	 char *ptr;
@@ -30,7 +30,7 @@ void printMsg1(const int a)
 	 ptr = Msg ;
    }
 
-void printMsg3(const int a)
+void printMsgc(const int a)
 {
 	 char Msg[100];
 	 char *ptr;
@@ -45,7 +45,7 @@ void printMsg3(const int a)
 	 ptr = Msg ;
    }	
 
-void printMsg4(const int a)
+void printMsgd(const int a)
 {
 	 char Msg[100];
 	 char *ptr;
@@ -60,7 +60,7 @@ void printMsg4(const int a)
 	 ptr = Msg ;
    }	 
 
-void printMsg5(const int a)
+void printMsge(const int a)
 {
 	 char Msg[100];
 	 char *ptr;
@@ -74,26 +74,6 @@ void printMsg5(const int a)
 	 sprintf(Msg, "%x", a);
 	 ptr = Msg ;
    }	 
-/*
-void printMsg2p(const int a, const int b)
-{
-	 char Msg[100];
-	 char *ptr;
-	 sprintf(Msg, "%x", a);
-	 ptr = Msg ;
-   while(*ptr != '\0')
-	 {
-      ITM_SendChar(*ptr);
-      ++ptr;
-   }
-	 sprintf(Msg, "%x", b);
-	 ptr = Msg ;
-   while(*ptr != '\0')
-	 {
-      ITM_SendChar(*ptr);
-      ++ptr;
-   }
-}*/
 
 void printMsg4p(const int a, const int b, const int c, const int d)
 {
